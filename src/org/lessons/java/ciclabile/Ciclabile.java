@@ -13,6 +13,32 @@ public class Ciclabile {
         this.currentIndex = 0;
     }
 
+
+//  Definisco un metodo per ottenere l'elemento successivo
+public int getElementoSuccessivo() {
+    if (!hasAncoraElementi()) {
+        throw new IllegalStateException("Non ci sono più elementi da restituire.");
+    }
+    return elements[currentIndex++];
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
  
 
