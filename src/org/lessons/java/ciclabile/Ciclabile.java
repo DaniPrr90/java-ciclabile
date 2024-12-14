@@ -7,7 +7,7 @@ public class Ciclabile {
     // Definisco un costruttore che accetta un array di interi
     public Ciclabile(int[] elements) {
         if (elements == null) {
-            throw new IllegalArgumentException("L'array non può essere null");
+           
         }
         this.elements = elements;
         this.currentIndex = 0;
@@ -16,7 +16,7 @@ public class Ciclabile {
     // Definisco un metodo per ottenere l'elemento successivo
     public int getElementoSuccessivo() {
         if (!hasAncoraElementi()) {
-            throw new IllegalStateException("Non ci sono più elementi da restituire.");
+          
         }
         return elements[currentIndex++];
     }
